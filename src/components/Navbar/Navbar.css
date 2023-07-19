@@ -1,26 +1,5 @@
-.navbar-waves {
-  position: relative;
-  background: #00FF57;
-}
-
-.navbar-waves::before,
-.navbar-waves::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 10px; /* Ajusta la altura de las ondas aquí según tus preferencias */
-  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.2), transparent);
-}
-
-.navbar-waves::before {
-  top: -5px;
-  background-size: 40px 100%;
-  transform: rotate(45deg);
-}
-
-.navbar-waves::after {
-  bottom: -5px;
-  background-size: 60px 100%;
-  transform: rotate(-45deg);
+.active-link {
+  border-bottom-width: 10px;
+  border-bottom-color: #ffffff;
+  border-bottom-style: solid;
 }

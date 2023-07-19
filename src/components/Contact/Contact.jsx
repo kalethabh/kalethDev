@@ -13,7 +13,7 @@ const SocialMedia = () => {
   ];
 
   return (
-    <div className="bg-[#1D1F21] min-h-screen">
+    <div className="min-h-screen">
       <Navbar />
       <motion.div
         initial={{ opacity: 0, x: 50 }}

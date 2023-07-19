@@ -59,7 +59,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="bg-[#1D1F21] lg:overflow-hidden xl:overflow-hidden 2xl:overflow-hidden">
+    <div className="lg:overflow-hidden xl:overflow-hidden 2xl:overflow-hidden">
       <Navbar />
       <motion.div
       initial={{ opacity: 0, x: 50 }}

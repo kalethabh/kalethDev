@@ -1,7 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
+import "./Navbar.css"
 
 const Navbar = () => {
+  const location = useLocation()
   return (
     <nav className="bg-[#000000] md:h-28 h-20">
       <svg
@@ -17,33 +19,40 @@ const Navbar = () => {
       </svg>
       <div className="px-4">
         <div className="md:flex flex decoration-2 md:text-xl justify-center md:space-x-16 lg:space-x-16 xl:space-x-16 2xl:space-x-16 space-x-4 md:py-6 py-6 relative">
-          <Link
+          <NavLink
             to="/home"
             className="text-[#00f7ff] md:hover:text-[#00FF57] md:px-4 md:py-2 px-2 rounded-md font-medium block mb-4 md:mb-0 text-center"
           >
             Home
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/skills"
             className="text-[#00f7ff] md:hover:text-[#00FF57] md:px-4 md:py-2 px-2 rounded-md font-medium block mb-4 md:mb-0 text-center"
+            activeClassName="active-link"
           >
             Skills
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/projects"
             className="text-[#00f7ff] md:hover:text-[#00FF57] md:px-4 md:py-2 px-2 rounded-md font-medium block mb-4 md:mb-0 text-center"
+            activeClassName="active-link"
           >
             Projects
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/contact"
             className="text-[#00E0FF] hover:text-[#00FF57] md:px-4 md:py-2 px-2 rounded-md font-medium block mb-4 md:mb-0 text-center"
+            activeClassName="active-link"
           >
             Contact
-          </Link>
+          </NavLink>
         </div>
         <div className="md:absolute md:left-10 md:top-32 absolute top-28 lg:top-12 lg:left-10 flex items-center">
-          <Link to="/" className='flex items-center'>
+          <NavLink 
+            to="/" 
+            className='flex items-center'
+            activeClassName="active-link"
+          >
             <img
               className="md:h-10 md:w-10 h-8 w-8 rounded-full md:bg-[#00f7ff] lg:bg-[#000000] 2xl:bg-[#000000] bg-[#00f7ff] mr-2"
               src="{person.imageUrl}"
@@ -52,7 +61,7 @@ const Navbar = () => {
             
             <h2 className="text-white 2xl:font-bold xl:font-bold md:font-bold font-bold lg:text-[#000000] 2xl:text-[#000000]">Kaleth Dev</h2>
             <i className="text-blue-400 ml-1 fas fa-check-circle"></i>
-          </Link>
+          </NavLink>
         </div>
       </div>
     </nav>

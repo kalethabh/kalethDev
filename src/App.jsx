@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import LandingPage from './components/LandingPage/LandingPage';
@@ -6,9 +6,17 @@ import Home from './components/Home/Home';
 import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
+import { useLocation } from 'react-router-dom';
+
 import './App.css';
 
 const App = () => {
+
+  const location = useLocation()
+
+  useEffect(()=>{
+    console.log(location.pathname);
+  })
   return (
     <Routes>
       <Route
