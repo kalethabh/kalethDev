@@ -45,7 +45,7 @@ const SocialMedia = () => {
                 </button>
               ))}
             </div>
-            <Link className='flex justify-center p-10 text-white'>kalethabh@gmail.com</Link>
+            <Link className='flex justify-center p-10 text-white lg:font-extrabold lg:text-black'>kalethabh@gmail.com</Link>
           </div>
         <Link
           to="/home"
