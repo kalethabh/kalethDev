@@ -1,0 +1,21 @@
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.floating-text {
+    animation: floating 2s ease infinite;
+}
+
+.floating-text-arrow {
+    animation: floating 2s ease infinite;
+}
