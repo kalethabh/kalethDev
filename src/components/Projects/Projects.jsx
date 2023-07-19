@@ -31,10 +31,35 @@ const Projects = () => {
       description: 'Description',
       image: 'ruta-de-la-imagen-2.jpg',
     },
+    {
+      title: 'Project 6',
+      description: 'Description',
+      image: 'ruta-de-la-imagen-2.jpg',
+    },
+    {
+      title: 'Project 7',
+      description: 'Description',
+      image: 'ruta-de-la-imagen-2.jpg',
+    },
+    {
+      title: 'Project 8',
+      description: 'Description',
+      image: 'ruta-de-la-imagen-2.jpg',
+    },
+    {
+      title: 'Project 9',
+      description: 'Description',
+      image: 'ruta-de-la-imagen-2.jpg',
+    },
+    {
+      title: 'Project 10',
+      description: 'Description',
+      image: 'ruta-de-la-imagen-2.jpg',
+    },
   ];
 
   return (
-    <div className="bg-[#1D1F21]">
+    <div className="bg-[#1D1F21] lg:overflow-hidden xl:overflow-hidden 2xl:overflow-hidden">
       <Navbar />
       <motion.div
       initial={{ opacity: 0, x: 50 }}
