@@ -2,58 +2,34 @@ import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import Error404 from '../../assets/Preview-404-ERROR.jpg'
 
 
 const Projects = () => {
   const projects = [
     {
-      title: 'Project 1',
-      description: 'Description',
-      image: 'ruta-de-la-imagen-1.jpg',
+      title: '404-NOT-FOUND-RESPONSIVE',
+      image: Error404,
+      link: 'https://error404-kalethabh.vercel.app/'
     },
     {
       title: 'Project 2',
-      description: 'Description',
       image: 'ruta-de-la-imagen-2.jpg',
     },
     {
       title: 'Project 3',
-      description: 'Description',
       image: 'ruta-de-la-imagen-2.jpg',
     },
     {
       title: 'Project 4',
-      description: 'Description',
       image: 'ruta-de-la-imagen-2.jpg',
     },
     {
       title: 'Project 5',
-      description: 'Description',
       image: 'ruta-de-la-imagen-2.jpg',
     },
     {
       title: 'Project 6',
-      description: 'Description',
-      image: 'ruta-de-la-imagen-2.jpg',
-    },
-    {
-      title: 'Project 7',
-      description: 'Description',
-      image: 'ruta-de-la-imagen-2.jpg',
-    },
-    {
-      title: 'Project 8',
-      description: 'Description',
-      image: 'ruta-de-la-imagen-2.jpg',
-    },
-    {
-      title: 'Project 9',
-      description: 'Description',
-      image: 'ruta-de-la-imagen-2.jpg',
-    },
-    {
-      title: 'Project 10',
-      description: 'Description',
       image: 'ruta-de-la-imagen-2.jpg',
     },
   ];
@@ -78,11 +54,11 @@ const Projects = () => {
                 <h2 className="text-4xl font-mono text-center mb-8 text-[#00FF57]">Projects</h2>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 sm:grid-cols-2 2xl:grid-cols-5  gap-8 ">
                   {projects.map((project, index) => (
-                    <button key={index} className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-[#85f1ff] duration-300 bg-gray-700 md:p-12 lg:p-16 p-8 rounded-md">
-                      <img className="w-full md:h-20 object-cover rounded-md mb-4" src={project.image} alt={project.title} />
-                      <h3 className="md:text-xs lg:text-xs xl:text-xs 2xl:text-xs text-sm font-semibold text-white mb-2">{project.title}</h3>
-                      <p className="text-gray-300 text-sm">{project.description}</p>
-                    </button>
+                    <Link to={project.link} key={index} className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-[#85f1ff] duration-300 bg-gray-700 md:p-6 lg:p-8 p-4 rounded-md">
+                      <img className=" md:h-20 object-cover rounded-md mb-4" src={project.image} alt={project.title} />
+                      <h3 className="md:text-xs lg:text-xs xl:text-xs 2xl:text-xs text-xs font-semibold text-white mb-2">{project.title}</h3>
+                     
+                    </Link>
                   ))}
                 </div>
               </div>
