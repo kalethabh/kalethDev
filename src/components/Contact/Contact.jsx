@@ -32,12 +32,12 @@ const SocialMedia = () => {
                 <button className="transition ease-in-out delay-130 hover:-translate-y-1 hover:scale-110 duration-200" key={link.name}>
                   <a
                     href={link.url}
-                    className="hover:text-[#00E0FF]"
+                    className="hover:text-[#ffffff]"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {link.name}
                     <img className='w-12' src={link.img} />
+                    {link.name}
                   </a>
                 </button>
               ))}
