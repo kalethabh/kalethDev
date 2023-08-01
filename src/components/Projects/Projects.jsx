@@ -13,8 +13,9 @@ const Projects = () => {
       link: 'https://error404-kalethabh.vercel.app/'
     },
     {
-      title: 'Project 2',
+      title: 'Ecommerce Bodu Gemu',
       image: 'ruta-de-la-imagen-2.jpg',
+      link: 'https://front-project-board-games.vercel.app/'
     },
     {
       title: 'Project 3',
