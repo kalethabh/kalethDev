@@ -3,6 +3,7 @@ import Navbar from '../Navbar/Navbar';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Error404 from '../../assets/Preview-404-ERROR.jpg'
+import Ecommerce from '../../assets/Preview-ecommerce.jpg'
 
 
 const Projects = () => {
@@ -14,7 +15,7 @@ const Projects = () => {
     },
     {
       title: 'Ecommerce Bodu Gemu',
-      image: 'ruta-de-la-imagen-2.jpg',
+      image: Ecommerce,
       link: 'https://front-project-board-games.vercel.app/'
     },
     {
