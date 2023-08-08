@@ -11,28 +11,14 @@ const Projects = () => {
     {
       title: '404-NOT-FOUND-RESPONSIVE',
       image: Error404,
+      description: '',
       link: 'https://error404-kalethabh.vercel.app/'
     },
     {
       title: 'Ecommerce Bodu Gemu',
       image: Ecommerce,
+      description: '',
       link: 'https://front-project-board-games.vercel.app/'
-    },
-    {
-      title: 'Project 3',
-      image: 'ruta-de-la-imagen-2.jpg',
-    },
-    {
-      title: 'Project 4',
-      image: 'ruta-de-la-imagen-2.jpg',
-    },
-    {
-      title: 'Project 5',
-      image: 'ruta-de-la-imagen-2.jpg',
-    },
-    {
-      title: 'Project 6',
-      image: 'ruta-de-la-imagen-2.jpg',
     },
   ];
 
@@ -54,7 +40,7 @@ const Projects = () => {
             </Link>
               <div className='md:px-10 lg:px-24 px-4'>
                 <h2 className="text-4xl font-mono text-center mb-8 text-[#00FF57]">Projects</h2>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 sm:grid-cols-2 2xl:grid-cols-5  gap-8 ">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 sm:grid-cols-2 2xl:grid-cols-5  gap-8 justify-center">
                   {projects.map((project, index) => (
                     <Link to={project.link} key={index} className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-[#85f1ff] duration-300 bg-gray-700 md:p-6 lg:p-8 p-4 rounded-md">
                       <img className=" md:h-20 object-cover rounded-md mb-4" src={project.image} alt={project.title} />
