@@ -64,7 +64,7 @@ const Navbar = () => {
           >
             <img
               className="md:h-10 md:w-10 h-8 w-8 rounded-full md:bg-[#00f7ff] lg:bg-[#000000] 2xl:bg-[#000000] bg-[#00f7ff] mr-2"
-              src=".\src\assets\android-chrome-192x192.png"
+              src=".\src\img\android-chrome-16x16.png"
               alt=""
             />
             

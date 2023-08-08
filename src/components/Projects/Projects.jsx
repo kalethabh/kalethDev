@@ -20,6 +20,13 @@ const Projects = () => {
       description: '',
       link: 'https://front-project-board-games.vercel.app/'
     },
+    {
+      tittle: 'Login Responsive',
+      image: '',
+      description: '',
+      link: '',
+
+    }
   ];
 
   return (
