@@ -2,8 +2,8 @@ import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import Error404 from '../../assets/Preview-404-ERROR.jpg'
-import Ecommerce from '../../assets/Preview-ecommerce.jpg'
+import Error404 from '../../img/Preview-404-ERROR.jpg'
+import Ecommerce from '../../img/Preview-ecommerce.jpg'
 
 
 const Projects = () => {
