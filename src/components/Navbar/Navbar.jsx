@@ -1,13 +1,13 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
+import logo from "../../img/android-chrome-512x512.png";
 
 const Navbar = () => {
   return (
     <nav className="bg-[#000000] md:h-28 h-20">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 147 720 45"
-        className="md:h-24 absolute md:top-3.5 top-2 left-0 h-20 w-screen"
+        viewBox="10 147 720 44"
+        className="md:h-24 absolute md:top-3.5 top-2 left-0 h-20 w-screen xl:w-[1080px]"
       >
         <path
           fill="#00FF57"
@@ -64,12 +64,12 @@ const Navbar = () => {
           >
             <img
               className="md:h-10 md:w-10 h-8 w-8 rounded-full md:bg-[#00f7ff] lg:bg-[#000000] 2xl:bg-[#000000] bg-[#00f7ff] mr-2"
-              src=".\src\img\android-chrome-16x16.png"
+              src={logo}
               alt=""
             />
             
             <h2 className="text-white 2xl:font-bold xl:font-bold md:font-bold font-bold lg:text-[#000000] 2xl:text-[#000000]">KalethDev</h2>
-            <i className="text-blue-600 ml-1 fas fa-check-circle"></i>
+            <i className="text-blue-600 ml-1 fas fa-check-circle"/>
           </NavLink>
         </div>
       </div>

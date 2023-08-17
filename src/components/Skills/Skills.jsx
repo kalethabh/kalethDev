@@ -1,4 +1,3 @@
-import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';

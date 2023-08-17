@@ -1,4 +1,3 @@
-import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
@@ -26,7 +25,7 @@ const SocialMedia = () => {
             <span className="inline-block align-middle">&lt;</span>
           </Link>
           <div className="md:flex md:flex-col md:justify-center md:px-40 md:items-center">
-            <h2 className="text-4xl font-mono text-center mb-8 text-[#00FF57]">Contact</h2>
+            <h2 className="text-5xl font-mono text-center mb-8 text-[#00FF57]">Contact</h2>
             <div className="flex flex-col items-center md:space-y-20 lg:space-y-20 2xl:space-y-14 space-y-12 md:mt-8 ">
               {socialMediaLinks.map((link) => (
                 <button className="transition ease-in-out delay-130 hover:-translate-y-1 hover:scale-110 duration-200" key={link.name}>
@@ -36,7 +35,7 @@ const SocialMedia = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img className='w-12' src={link.img} />
+                    <img className='w-16' src={link.img} />
                     {link.name}
                   </a>
                 </button>

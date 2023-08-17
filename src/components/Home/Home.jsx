@@ -27,8 +27,11 @@ const Home = () => {
             ¡Bienvenidos!
           </h1>
           <h2 className="mt-5 px-8 md:text-xl md:px-5 lg:px-10 lg:mt-10 font-mono justify-center text-[#ffffff] floating-text">
-            ¡Bienvenidos a mi portafolio. Soy un desarrollador junior fullstack con experiencias básicas en React, HTML, CSS, JavaScript, PostgresDB, Git, Node.js y Express. Aquí podrás explorar mi trabajo y descubrir mi pasión por crear interfaces de usuario interactivas y atractivas. Estoy entusiasmado por seguir aprendiendo y creciendo en el campo del desarrollo web. ¡Espero que disfrutes navegando por mi sitio!
+          Saludos! 👋 Me entusiasma profundamente el arte de crear soluciones tecnológicas integrales. Mi foco principal se centra en el Desarrollo Web Full Stack, una disciplina que abarca tanto el diseño de interfaces atractivas y funcionales mediante el uso de herramientas como HTML, CSS y JavaScript, como la construcción de aplicaciones interactivas y escalables utilizando tecnologías avanzadas como React, Redux, NodeJS y Express. También me siento cómodo trabajando con bases de datos como PostgreSQL y Sequelize para garantizar una gestión eficiente de la información. Sí te intereza mi perfil aquí te dejo mi CV para que le eches un vistazo, no dudes en contactarme!.
           </h2>
+            <button className="transition ease-in-out delay-150hover:-translate-y-1 hover:scale-110 duration-300 p-6">
+              <a href="/assets/CV Kaleth Benjumea-ac6ba3ec.pdf" target="_blank" rel="noopener noreferrer" className="text-[#ffffff] font-mono border-4 p-1 text-2xl bg-[#16bd4d] border-[#16bd4d] rounded-md">Descargar CV</a>
+          </button>
         </div>
         <Link
           to="/skills"
